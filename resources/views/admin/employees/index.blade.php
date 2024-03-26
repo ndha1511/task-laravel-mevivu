@@ -13,7 +13,7 @@
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="{{ route('admin.dashboard') }}"
                                     class="text-muted">{{ __('Dashboard') }}</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">{{ __('Danh sách thành viên') }}</li>
+                            <li class="breadcrumb-item active" aria-current="page">{{ __('Danh sách nhâ') }}</li>
                         </ol>
                     </nav>
                 </div>
@@ -24,8 +24,8 @@
         <div class="container-xl">
             <div class="card">
                 <div class="card-header justify-content-between">
-                    <h2 class="mb-0">{{ __('Danh sách thành viên') }}</h2>
-                    <x-link :href="route('admin.user.create')" class="btn btn-primary"><i class="ti ti-plus"></i>{{ __('Thêm thành viên') }}</x-link>
+                    <h2 class="mb-0">{{ __('Danh sách nhân viên') }}</h2>
+                    <x-link :href="route('admin.employee.create')" class="btn btn-primary"><i class="ti ti-plus"></i>{{ __('Thêm nhân viên') }}</x-link>
                 </div>
                 <div class="card-body">
                     <div class="table-responsive position-relative">
@@ -47,11 +47,11 @@
 
 {{ $dataTable->scripts() }}
 
-@include('admin.users.scripts.datatable')
+@include('admin.employees.scripts.datatable')
 <script>
 $(document).ready(function(){
     // define columns for the datatables
-    columns = window.LaravelDataTables["userTable"].columns();
+    columns = window.LaravelDataTables["employeeTable"].columns();
     toggleColumnsDatatable(columns);
 });
 </script>

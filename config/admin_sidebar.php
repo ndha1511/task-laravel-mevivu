@@ -48,4 +48,24 @@ return [
             ],
         ]
     ],
+    [
+        'title' => 'QL Nhân viên',
+        'routeName' => null,
+        'icon' => '<i class="ti ti-users"></i>',
+        'roles' => [],
+        'sub' => [
+            [
+                'title' => 'Thêm nhân viên',
+                'routeName' => 'admin.employee.create',
+                'icon' => '<i class="ti ti-plus"></i>',
+                'roles' => [],
+            ],
+            [
+                'title' => 'DS nhân viên',
+                'routeName' => 'admin.employee.index',
+                'icon' => '<i class="ti ti-list"></i>',
+                'roles' => [],
+            ],
+        ]
+    ],
 ];

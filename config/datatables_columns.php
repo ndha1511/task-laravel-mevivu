@@ -61,8 +61,7 @@ return [
         ],
         'gender' => [
             'title' => 'Giới tính',
-            'orderable' => false,
-            'visible' => false
+            'orderable' => false
         ],
         'vip' => [
             'title' => 'Vip',
@@ -81,4 +80,38 @@ return [
             'addClass' => 'text-center'
         ],
     ],
+    'employee' => [
+        'DT_RowIndex' => [
+            'title' => 'STT',
+            'width' => '20px',
+            'orderable' => false
+        ],
+        'email' => [
+            'title' => 'Email',
+            'orderable' => false,
+        ],
+        'username' => [
+            'title' => 'Tên đăng nhập',
+            'orderable' => false,
+        ],
+        'gender' => [
+            'title' => 'Giới tính',
+            'orderable' => false
+        ],
+        'role' => [
+            'title' => 'Vai trò',
+            'orderable' => false
+        ],
+        'date' => [
+            'title'=> 'date',
+            'orderable' => false
+        ],
+        'action' => [
+            'title' => 'Thao tác',
+            'orderable' => false,
+            'exportable' => false,
+            'printable' => false,
+            'addClass' => 'text-center'
+        ],
+    ]
 ];

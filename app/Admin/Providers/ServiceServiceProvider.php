@@ -9,6 +9,7 @@ class ServiceServiceProvider extends ServiceProvider
     protected $services = [
         'App\Admin\Services\Admin\AdminServiceInterface' => 'App\Admin\Services\Admin\AdminService',
         'App\Admin\Services\User\UserServiceInterface' => 'App\Admin\Services\User\UserService',
+        'App\Admin\Services\Employee\EmployeeServiceInterface' => 'App\Admin\Services\Employee\EmployeeService'
     ];
     /**
      * Register services.

@@ -9,6 +9,7 @@ class RepositoryServiceProvider extends ServiceProvider
     protected $repositories = [
         'App\Admin\Repositories\Admin\AdminRepositoryInterface' => 'App\Admin\Repositories\Admin\AdminRepository',
         'App\Admin\Repositories\User\UserRepositoryInterface' => 'App\Admin\Repositories\User\UserRepository',
+        'App\Admin\Repositories\Employee\EmployeeRepositoryInterface' => 'App\Admin\Repositories\Employee\EmployeeRepository',
 
     ];
     /**
